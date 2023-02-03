@@ -1,0 +1,647 @@
+<!-- 
+    Researched on mdn css grid, flexbox and html elements.
+    https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids
+    https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox
+    https://developer.mozilla.org/en-US/docs/Web/HTML/Element
+    Tried with Flexbox, then togrid - realised much easier to do in Grid
+-->
+
+<!-- 2 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 3 -->
+    <title>Periodic Table of Elements</title>
+
+    <!-- 4 -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- 5 -->
+    <div class="periodicTableContainer">
+
+        <!-- 6 -->
+        <!-- ROW 1 -->
+        <div class="block yellow">
+            <h5 class="number">1</h5>
+            <h2 class="element">H</h2>
+        </div>
+
+        <!-- 7 -->
+        <div class="block periodicEmpty"></div>
+        <div class="block periodicEmpty"></div>
+        <div class="block periodicEmpty"></div>
+        <div class="block periodicEmpty"></div>
+        <div class="block periodicEmpty"></div>
+        <div class="block periodicEmpty"></div>
+        <div class="block periodicEmpty"></div>
+        <div class="block periodicEmpty"></div>
+        <div class="block periodicEmpty"></div>
+        <div class="block periodicEmpty"></div>
+        <div class="block periodicEmpty"></div>
+        <div class="block periodicEmpty"></div>
+        <div class="block periodicEmpty"></div>
+        <div class="block periodicEmpty"></div>
+        <div class="block periodicEmpty"></div>
+        <div class="block periodicEmpty"></div>
+
+        <div class="block orange">
+            <h5 class="number">2</h5>
+            <h2 class="element">He</h2>
+        </div>
+
+        <!-- 6 -->
+        <!-- ROW 2 -->
+        <div class="block red">
+            <h5 class="number">3</h5>
+            <h2 class="element">Li</h2>
+        </div>
+        <div class="block purple">
+            <h5 class="number">4</h5>
+            <h2 class="element">Be</h2>
+        </div>
+
+        <!-- 7 -->
+        <div class="block periodicEmpty"></div>
+        <div class="block periodicEmpty"></div>
+        <div class="block periodicEmpty"></div>
+        <div class="block periodicEmpty"></div>
+        <div class="block periodicEmpty"></div>
+        <div class="block periodicEmpty"></div>
+        <div class="block periodicEmpty"></div>
+        <div class="block periodicEmpty"></div>
+        <div class="block periodicEmpty"></div>
+        <div class="block periodicEmpty"></div>
+
+        <div class="block olive">
+            <h5 class="number">5</h5>
+            <h2 class="element">B</h2>
+        </div>
+        <div class="block yellow">
+            <h5 class="number">6</h5>
+            <h2 class="element">C</h2>
+        </div>
+        <div class="block yellow">
+            <h5 class="number">7</h5>
+            <h2 class="element">N</h2>
+        </div>
+        <div class="block yellow">
+            <h5 class="number">8</h5>
+            <h2 class="element">O</h2>
+        </div>
+        <div class="block yellow">
+            <h5 class="number">9</h5>
+            <h2 class="element">F</h2>
+        </div>
+        <div class="block orange">
+            <h5 class="number">10</h5>
+            <h2 class="element">Ne</h2>
+        </div>
+
+        <!-- 6 -->
+        <!-- ROW 3 -->
+        <div class="block red">
+            <h5 class="number">11</h5>
+            <h2 class="element">Na</h2>
+        </div>
+        <div class="block purple">
+            <h5 class="number">12</h5>
+            <h2 class="element">Mg</h2>
+        </div>
+
+        <!-- 7 -->
+        <div class="block periodicEmpty"></div>
+        <div class="block periodicEmpty"></div>
+        <div class="block periodicEmpty"></div>
+        <div class="block periodicEmpty"></div>
+        <div class="block periodicEmpty"></div>
+        <div class="block periodicEmpty"></div>
+        <div class="block periodicEmpty"></div>
+        <div class="block periodicEmpty"></div>
+        <div class="block periodicEmpty"></div>
+        <div class="block periodicEmpty"></div>
+
+        <div class="block brightGreen">
+            <h5 class="number">13</h5>
+            <h2 class="element">AI</h2>
+        </div>
+        <div class="block olive">
+            <h5 class="number">14</h5>
+            <h2 class="element">Si</h2>
+        </div>
+        <div class="block yellow">
+            <h5 class="number">15</h5>
+            <h2 class="element">P</h2>
+        </div>
+        <div class="block yellow">
+            <h5 class="number">16</h5>
+            <h2 class="element">S</h2>
+        </div>
+        <div class="block yellow">
+            <h5 class="number">17</h5>
+            <h2 class="element">CI</h2>
+        </div>
+        <div class="block orange">
+            <h5 class="number">18</h5>
+            <h2 class="element">Ar</h2>
+        </div>
+
+        <!-- 6 -->
+        <!-- ROW 4 -->
+        <div class="block red">
+            <h5 class="number">19</h5>
+            <h2 class="element">K</h2>
+        </div>
+        <div class="block purple">
+            <h5 class="number">20</h5>
+            <h2 class="element">Ca</h2>
+        </div>
+
+        <div class="block blue">
+            <h5 class="number">21</h5>
+            <h2 class="element">Sc</h2>
+        </div>
+        <div class="block blue">
+            <h5 class="number">22</h5>
+            <h2 class="element">Ti</h2>
+        </div>
+        <div class="block blue">
+            <h5 class="number">23</h5>
+            <h2 class="element">V</h2>
+        </div>
+        <div class="block blue">
+            <h5 class="number">24</h5>
+            <h2 class="element">Cr</h2>
+        </div>
+        <div class="block blue">
+            <h5 class="number">25</h5>
+            <h2 class="element">Mn</h2>
+        </div>
+        <div class="block blue">
+            <h5 class="number">26</h5>
+            <h2 class="element">Fe</h2>
+        </div>
+        <div class="block blue">
+            <h5 class="number">27</h5>
+            <h2 class="element">Co</h2>
+        </div>
+        <div class="block blue">
+            <h5 class="number">28</h5>
+            <h2 class="element">Ni</h2>
+        </div>
+        <div class="block blue">
+            <h5 class="number">29</h5>
+            <h2 class="element">Cu</h2>
+        </div>
+        <div class="block blue">
+            <h5 class="number">30</h5>
+            <h2 class="element">Zn</h2>
+        </div>
+
+        <div class="block brightGreen">
+            <h5 class="number">31</h5>
+            <h2 class="element">Ga</h2>
+        </div>
+        <div class="block olive">
+            <h5 class="number">31</h5>
+            <h2 class="element">Ge</h2>
+        </div>
+        <div class="block olive">
+            <h5 class="number">33</h5>
+            <h2 class="element">As</h2>
+        </div>
+        <div class="block yellow">
+            <h5 class="number">34</h5>
+            <h2 class="element">Se</h2>
+        </div>
+        <div class="block yellow">
+            <h5 class="number">35</h5>
+            <h2 class="element">Br</h2>
+        </div>
+        <div class="block orange">
+            <h5 class="number">36</h5>
+            <h2 class="element">Kr</h2>
+        </div>
+
+        <!-- 6 -->
+        <!-- ROW 5 -->
+        <div class="block red">
+            <h5 class="number">37</h5>
+            <h2 class="element">Rb</h2>
+        </div>
+        <div class="block purple">
+            <h5 class="number">38</h5>
+            <h2 class="element">Sr</h2>
+        </div>
+
+        <div class="block blue">
+            <h5 class="number">39</h5>
+            <h2 class="element">Y</h2>
+        </div>
+        <div class="block blue">
+            <h5 class="number">40</h5>
+            <h2 class="element">Zr</h2>
+        </div>
+        <div class="block blue">
+            <h5 class="number">41</h5>
+            <h2 class="element">Nb</h2>
+        </div>
+        <div class="block blue">
+            <h5 class="number">42</h5>
+            <h2 class="element">Mo</h2>
+        </div>
+        <div class="block blue">
+            <h5 class="number">43</h5>
+            <h2 class="element">Tc</h2>
+        </div>
+        <div class="block blue">
+            <h5 class="number">44</h5>
+            <h2 class="element">Ru</h2>
+        </div>
+        <div class="block blue">
+            <h5 class="number">45</h5>
+            <h2 class="element">Rh</h2>
+        </div>
+        <div class="block blue">
+            <h5 class="number">46</h5>
+            <h2 class="element">Pd</h2>
+        </div>
+        <div class="block blue">
+            <h5 class="number">47</h5>
+            <h2 class="element">Ag</h2>
+        </div>
+        <div class="block blue">
+            <h5 class="number">48</h5>
+            <h2 class="element">Cd</h2>
+        </div>
+
+        <div class="block brightGreen">
+            <h5 class="number">49</h5>
+            <h2 class="element">In</h2>
+        </div>
+        <div class="block brightGreen">
+            <h5 class="number">50</h5>
+            <h2 class="element">Sn</h2>
+        </div>
+        <div class="block olive">
+            <h5 class="number">51</h5>
+            <h2 class="element">Sb</h2>
+        </div>
+        <div class="block olive">
+            <h5 class="number">52</h5>
+            <h2 class="element">Te</h2>
+        </div>
+        <div class="block yellow">
+            <h5 class="number">53</h5>
+            <h2 class="element">I</h2>
+        </div>
+        <div class="block orange">
+            <h5 class="number">54</h5>
+            <h2 class="element">Xe</h2>
+        </div>
+
+        <!-- 6 -->
+        <!-- ROW 6 -->
+        <div class="block red">
+            <h5 class="number">55</h5>
+            <h2 class="element">Cs</h2>
+        </div>
+        <div class="block purple">
+            <h5 class="number">56</h5>
+            <h2 class="element">Ba</h2>
+        </div>
+
+        <!-- 7 -->
+        <div class="block periodicEmpty">
+            <h5 class="number"></h5>
+            <h2 class="element"></h2>
+        </div>
+
+        <div class="block blue">
+            <h5 class="number">72</h5>
+            <h2 class="element">Hf</h2>
+        </div>
+        <div class="block blue">
+            <h5 class="number">73</h5>
+            <h2 class="element">Ta</h2>
+        </div>
+        <div class="block blue">
+            <h5 class="number">74</h5>
+            <h2 class="element">W</h2>
+        </div>
+        <div class="block blue">
+            <h5 class="number">75</h5>
+            <h2 class="element">Re</h2>
+        </div>
+        <div class="block blue">
+            <h5 class="number">76</h5>
+            <h2 class="element">Os</h2>
+        </div>
+        <div class="block blue">
+            <h5 class="number">77</h5>
+            <h2 class="element">Ir</h2>
+        </div>
+        <div class="block blue">
+            <h5 class="number">78</h5>
+            <h2 class="element">Pt</h2>
+        </div>
+        <div class="block blue">
+            <h5 class="number">79</h5>
+            <h2 class="element">Au</h2>
+        </div>
+        <div class="block blue">
+            <h5 class="number">80</h5>
+            <h2 class="element">Hg</h2>
+        </div>
+
+        <div class="block brightGreen">
+            <h5 class="number">81</h5>
+            <h2 class="element">TI</h2>
+        </div>
+        <div class="block brightGreen">
+            <h5 class="number">82</h5>
+            <h2 class="element">Pb</h2>
+        </div>
+        <div class="block brightGreen">
+            <h5 class="number">83</h5>
+            <h2 class="element">Bi</h2>
+        </div>
+        <div class="block olive">
+            <h5 class="number">84</h5>
+            <h2 class="element">Po</h2>
+        </div>
+        <div class="block yellow">
+            <h5 class="number">85</h5>
+            <h2 class="element">At</h2>
+        </div>
+        <div class="block orange">
+            <h5 class="number">86</h5>
+            <h2 class="element">Rn</h2>
+        </div>
+
+        <!-- 6 -->
+        <!-- ROW 7 -->
+        <div class="block red">
+            <h5 class="number">87</h5>
+            <h2 class="element">Fr</h2>
+        </div>
+        <div class="block purple">
+            <h5 class="number">88</h5>
+            <h2 class="element">Ra</h2>
+        </div>
+
+        <!-- 7 -->
+        <div class="block periodicEmpty">
+            <h5 class="number"></h5>
+            <h2 class="element"></h2>
+        </div>
+        <div class="block blue">
+            <h5 class="number">104</h5>
+            <h2 class="element">Rf</h2>
+        </div>
+        <div class="block blue">
+            <h5 class="number">105</h5>
+            <h2 class="element">Db</h2>
+        </div>
+        <div class="block blue">
+            <h5 class="number">106</h5>
+            <h2 class="element">Sg</h2>
+        </div>
+        <div class="block blue">
+            <h5 class="number">107</h5>
+            <h2 class="element">Bh</h2>
+        </div>
+        <div class="block blue">
+            <h5 class="number">108</h5>
+            <h2 class="element">Hs</h2>
+        </div>
+        <div class="block blue">
+            <h5 class="number">109</h5>
+            <h2 class="element">Mt</h2>
+        </div>
+        <div class="block blue">
+            <h5 class="number">110</h5>
+            <h2 class="element">Ds</h2>
+        </div>
+        <div class="block blue">
+            <h5 class="number">112</h5>
+            <h2 class="element">Rg</h2>
+        </div>
+        <div class="block blue">
+            <h5 class="number">113</h5>
+            <h2 class="element">Cn</h2>
+        </div>
+
+        <div class="block brightGreen">
+            <h5 class="number">114</h5>
+            <h2 class="element">Nh</h2>
+        </div>
+        <div class="block brightGreen">
+            <h5 class="number">115</h5>
+            <h2 class="element">FI</h2>
+        </div>
+        <div class="block brightGreen">
+            <h5 class="number">116</h5>
+            <h2 class="element">Mc</h2>
+        </div>
+        <div class="block brightGreen">
+            <h5 class="number">117</h5>
+            <h2 class="element">Lv</h2>
+        </div>
+        <div class="block yellow">
+            <h5 class="number">118</h5>
+            <h2 class="element">Ts</h2>
+        </div>
+        <div class="block orange">
+            <h5 class="number">119</h5>
+            <h2 class="element">Og</h2>
+        </div>
+
+        <!-- 6 -->
+        <!-- 7 -->
+        <!-- ROW 8 -->
+        <div class="block periodicEmpty">
+            <h5 class="number"></h5>
+            <h2 class="element"></h2>
+        </div>
+        <div class="block periodicEmpty">
+            <h5 class="number"></h5>
+            <h2 class="element"></h2>
+        </div>
+
+        <div class="block periodicEmpty">
+            <h5 class="number"></h5>
+            <h2 class="element"></h2>
+        </div>
+        <div class="block skyBlue">
+            <h5 class="number">57</h5>
+            <h2 class="element">La</h2>
+        </div>
+        <div class="block skyBlue">
+            <h5 class="number">58</h5>
+            <h2 class="element">Ce</h2>
+        </div>
+        <div class="block skyBlue">
+            <h5 class="number">59</h5>
+            <h2 class="element">Pr</h2>
+        </div>
+        <div class="block skyBlue">
+            <h5 class="number">60</h5>
+            <h2 class="element">Nd</h2>
+        </div>
+        <div class="block skyBlue">
+            <h5 class="number">61</h5>
+            <h2 class="element">Pm</h2>
+        </div>
+        <div class="block skyBlue">
+            <h5 class="number">62</h5>
+            <h2 class="element">Sm</h2>
+        </div>
+        <div class="block skyBlue">
+            <h5 class="number">63</h5>
+            <h2 class="element">Eu</h2>
+        </div>
+        <div class="block skyBlue">
+            <h5 class="number">64</h5>
+            <h2 class="element">Gd</h2>
+        </div>
+        <div class="block skyBlue">
+            <h5 class="number">65</h5>
+            <h2 class="element">Tb</h2>
+        </div>
+        <div class="block skyBlue">
+            <h5 class="number">66</h5>
+            <h2 class="element">Dy</h2>
+        </div>
+        <div class="block skyBlue">
+            <h5 class="number">67</h5>
+            <h2 class="element">Ho</h2>
+        </div>
+        <div class="block skyBlue">
+            <h5 class="number">68</h5>
+            <h2 class="element">Er</h2>
+        </div>
+        <div class="block skyBlue">
+            <h5 class="number">69</h5>
+            <h2 class="element">Tm</h2>
+        </div>
+        <div class="block skyBlue">
+            <h5 class="number">70</h5>
+            <h2 class="element">Yb</h2>
+        </div>
+        <div class="block skyBlue">
+            <h5 class="number">71</h5>
+            <h2 class="element">Lu</h2>
+        </div>
+
+        <!-- 6 -->
+        <!-- 7 -->
+        <!-- ROW 9 -->
+        <div class="block periodicEmpty">
+            <h5 class="number"></h5>
+            <h2 class="element"></h2>
+        </div>
+        <div class="block periodicEmpty">
+            <h5 class="number"></h5>
+            <h2 class="element"></h2>
+        </div>
+        <div class="block periodicEmpty">
+            <h5 class="number"></h5>
+            <h2 class="element"></h2>
+        </div>
+
+        <div class="block aqua">
+            <h5 class="number">89</h5>
+            <h2 class="element">Ac</h2>
+        </div>
+        <div class="block aqua">
+            <h5 class="number">90</h5>
+            <h2 class="element">Th</h2>
+        </div>
+        <div class="block aqua">
+            <h5 class="number">91</h5>
+            <h2 class="element">Pa</h2>
+        </div>
+        <div class="block aqua">
+            <h5 class="number">92</h5>
+            <h2 class="element">U</h2>
+        </div>
+        <div class="block aqua">
+            <h5 class="number">93</h5>
+            <h2 class="element">Np</h2>
+        </div>
+        <div class="block aqua">
+            <h5 class="number">94</h5>
+            <h2 class="element">Pu</h2>
+        </div>
+        <div class="block aqua">
+            <h5 class="number">95</h5>
+            <h2 class="element">Am</h2>
+        </div>
+        <div class="block aqua">
+            <h5 class="number">96</h5>
+            <h2 class="element">Cm</h2>
+        </div>
+        <div class="block aqua">
+            <h5 class="number">97</h5>
+            <h2 class="element">Bk</h2>
+        </div>
+        <div class="block aqua">
+            <h5 class="number">98</h5>
+            <h2 class="element">Cf</h2>
+        </div>
+        <div class="block aqua">
+            <h5 class="number">99</h5>
+            <h2 class="element">Es</h2>
+        </div>
+        <div class="block aqua">
+            <h5 class="number">100</h5>
+            <h2 class="element">Fm</h2>
+        </div>
+        <div class="block aqua">
+            <h5 class="number">101</h5>
+            <h2 class="element">Md</h2>
+        </div>
+        <div class="block aqua">
+            <h5 class="number">102</h5>
+            <h2 class="element">No</h2>
+        </div>
+        <div class="block aqua">
+            <h5 class="number">103</h5>
+            <h2 class="element">Lr</h2>
+        </div>
+    </div>
+
+    <!-- 8 -->
+    <img src="https://www.typecalendar.com/wp-content/uploads/2022/11/Periodic-Table.jpg" alt="">
+</body>
+</html>
+<!-- 
+    Thinking
+        1. This webpage displays the periodic table of elements. The content is responsive when you re-size the viewport. At breakpoint 850px the text changes to white and the font to "monospace". At 575px breakpoint the content no longer can be made smaller and a picture of the periodic table of elements is displayed instead.
+
+        2. Starting off with a basic HTML template so the browser know its working with HTML.
+
+        3. Title in the web tab at the time of loading. Useful for accessibility and seo purposes. 
+
+        4. Link to our external styles. Without these we wouldn't be able to style our HTML elements.
+
+        5. First a container for our content is created named "periodicTableContainer". This is created to, one, hold all of our content, and, secondly, so we can apply a display property of "grid" to it.
+
+        6. Each row has been labelled for ease of debugging and readability. Each row contains the following structure:
+
+            <div class="block aqua">            /contains our text - contains two classes: "block" - generic styling applied to all blocks - "aqua" this represents the color our period element is and should be set when styling its background color.
+
+                <h5 class="number">103</h5> /contains the number of our element
+                <h2 class="element">Lr</h2> / contains the letter code of the element
+            </div>
+        
+        7. For all empty elements on our page, I've given them a class of "periodicEmpty", so they won't be shown.
+
+        8. Our periodic table of element's image. By default, it isn't seen by setting it's display to none. Once the breakdpoint of 575px is reached it's display is changed to block. 
+ -->        

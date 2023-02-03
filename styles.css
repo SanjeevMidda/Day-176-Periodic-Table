@@ -1,0 +1,120 @@
+/* 1 */
+.periodicTableContainer{
+    display: grid;
+    grid-template-columns: repeat(18, auto);
+    grid-template-rows: repeat(9, auto);
+    grid-gap:5px;
+
+}
+
+/* 2 */
+.block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+*{
+    font-family: Helvetica, sans-serif;
+}
+
+/* 3 */
+.periodicEmpty{
+    visibility:hidden; 
+}
+
+/* 4 */
+.red{
+    background-color: red;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.purple{
+    background-color: purple;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.brightGreen{
+    background-color: green;
+}
+
+.olive{
+    background-color: olive;
+}
+
+.orange{
+    background-color: orange;
+}
+
+.skyBlue{
+    background-color: skyblue;
+}
+
+.aqua{
+    background-color: aqua;
+}
+
+.number, .element{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding:5px;
+}
+
+/* 5 */
+h5{
+    font-size:1vw;
+}
+
+h2{
+    font-size:2vw;
+}
+
+/* 6 */
+img{
+    max-width: 100%;
+    display: none;
+}
+
+/* 7 */
+@media screen and (max-width:850px){
+    h2, h5{
+        color:white;
+        font-family: monospace;
+    }
+}
+
+@media screen and (max-width:575px){
+    .periodicTableContainer{
+        display: none;
+    }
+
+    img{
+        display: block;
+    }
+}
+
+/* 
+    Thinking
+        1. Our periodTableContainer houses our content. It's set to the display of grid so I can make use of its properties, and the first step in making our webpage responsive. I've used the repeat function to set 18 columns to auto size, and our rows at 9 for auto. All elements will have a gap of 5px between them.
+
+        2. I've set the display property of flex to all elements which have this class. To center all the text inside our blocks I've set the "justify-items" and "align-items" to center. To stack our text flex-direction is set to "column". Lastly, I give it a border with a radius of 10px to smooth out each side.
+
+        3. I've added a class of ".periodicEmpty" to all elements which shouldn't be seen - the empty space onscreen. I used the "visibility" property instead of "display" as I wanted to keep the space intact, and for our grid items to still show this space between the elements. 
+
+        4. All of these have a specific background color applicable to the element. 
+
+        5. H2 and H5 elements have been made responsive by using "vw" unit. They have a different size relative to the viewport.
+
+        6. The image has been made responsive by setting its width using the "%" unit. The "max-width" has been used to ensure our image fits onto the page and not overflow. The display of the image is initially set to none, so it won't show when we open the webpage at full screen. Once the viewport reaches breakpoint(575px) then its display is switched to block so the image becomes viewable.
+
+        7. 2 breakpoints created here: the first is executed at 850px. Our h2 and h5 elements will change their colors to white and their font to "monospace. The second breakpoint is reached at 575px. Our "periodicTableContainer" display is set to none, so we won't see it anymore, and it is removed from onscreen. Our image is shown in its place - by setting its display to block.
+*/
